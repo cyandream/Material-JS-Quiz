@@ -1,0 +1,103 @@
+.pull-quote-half-right() {
+  float: right;
+  width: 40%;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  font-size:1.7em;
+  font-weight:bold;
+  font-style:italic;
+}
+
+.pull-quote-full() {
+  float: right;
+  width: 100%;
+  padding-bottom: 1em;
+  font-size: 1.7em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.pull-quote-surround() {
+  &::before {
+    content: "\201C";
+  }
+  &::after {
+    content: "\201D";
+  }
+}
+
+.drive-external-link() {
+    a[href^="http://"]:not([href*="dcim.com"]):after,
+    a[href^="https://"]:not([href*="dcim.com"]):after {
+    padding-right:3px;
+    padding-left:2px;
+    content: " " url('../../public/assets/images/external-link-icon.png');
+    }
+}
+
+// IE use:  .drive-trnsition-duration(.5s)
+.drive-transition-duration(@argument){
+  -webkit-transition-duration: @argument;
+  -moz-transition-duration: @argument;
+  -o-transition-duration: @argument;
+  transition-duration: @argument;
+}
+
+// IE use:  .drive-trnsition(all .5s .linear)
+.drive-transition(@argument){
+  -webkit-transition: @argument;
+  -moz-transition: @argument;
+  -o-transition: @argument;
+  transition: @argument;
+}
+
+// Added Defaults:   drive-transition-default() or
+// drive-transition-default( all, 1s, ease-out)
+.drive-transition-default(@property:all, @duration: .3s, @easing: linear){
+  -webkit-transition: @property @duration @easing;
+  -moz-transition: @property @duration @easing;
+  -o-transition: @property @duration @easing;
+  transition: @property @duration @easing;
+}
+
+
+// The clearfix mixin
+.clearfix() {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+// Apply clearfix on .parent
+.parent {
+  .clearfix();
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.drive-margin-15(){
+  margin-left:15px;
+  margin-right:15px;
+}
+.drive-margin-10(){
+  margin-left:10px;
+  margin-right:10px;
+}
+
+ .drive-pad-15() {
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+ // Keep images from scaling beyond the width of their parents.
+.img-responsive(@display: block) {
+  display: @display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}

@@ -1,0 +1,53 @@
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Dependency directory
+# Deployed apps should consider commenting this line out:
+# see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
+node_modules
+
+#Compiled sources
+build
+
+package.json
+
+
+/bower_components/*
+/.sass-cache/*
+*.DS_Store
+/stylesheets/*
+_resources/
+data/
+dist/
+
+
+
+.sass-cache
+*.css.map
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+todo-list.sublime-workspace
+
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+ *.sublime-project
+todo-list.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+
+.VolumeIcon.icns
+.fseventsd
+Icon^M^M
+lib/Icon^M^M
