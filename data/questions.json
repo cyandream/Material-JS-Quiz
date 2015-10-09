@@ -1,0 +1,43 @@
+{
+	"title": "Subaru Badge of Ownership",
+	"styles": [
+		"/public/less/pages/dnd.css"
+	],
+	"scripts": [
+		"/public/js/pages/dnd.js"
+	],
+	"badges": [
+		"Love",
+		"Family",
+		"Animals",
+		"Camping",
+		"Photography",
+		"Music/Arts",
+		"Cooking",
+		"Food & Wine",
+		"Antiquing",
+		"Gardening",
+		"Environment",
+		"Yoga",
+		"Snow Sports",
+		"Outdoor Sports",
+		"Kayaking",
+		"Fishing",
+		"Golf",
+		"Marathon",
+		"Half Marathon",
+		"Swimming",
+		"Biking",
+		"Running",
+		"Military",
+		"Breast Cancer Awareness",
+		"Diversity",
+		"Education",
+		"Mechanical",
+		"100K+ High Mileage",
+		"200K+ High Mileage",
+		"Performance",
+		"Rally",
+		"RallyCross"
+	]
+}

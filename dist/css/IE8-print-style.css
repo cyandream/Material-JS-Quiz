@@ -1,0 +1,38 @@
+/*Print style for IE 8 and less*/
+
+body{
+	color: #000;
+}
+.featured-top-articles ul{
+	list-style: none;
+}
+
+.hero-image{
+	display:none;
+}
+.article-main .xs-byline p, .byline p{
+	display:none;
+}
+
+.article-main .share, .share-xs, .social-sharing-icon{
+	display: none;
+}
+
+.img-pinterest-full, .img-pinterest-right, .img-pinterest-left{
+	display: none;
+}
+
+.article-tags{
+	display:none;
+}
+
+.related-articles-background{
+		display: none;
+}
+
+a[href]:after {
+    content: " ";
+  }
+  a:link:after {
+   content: " ";
+ }
